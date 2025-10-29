@@ -878,8 +878,8 @@ ansible-playbook playbook.yml --vault-password-file ~/.vault_pass.txt
 | terragrunt | v0.92.1 | ✅ Installiert |
 | tfenv | 3.0.0 | ✅ Installiert |
 | terraform-docs | v0.18.0 | ✅ Installiert |
-| tfsec | - | ⚠️ Nicht installiert* |
-| checkov | - | ⚠️ Nicht installiert* |
+| tfsec | v1.28.14 | ✅ Installiert (QA-Runde) |
+| checkov | v3.2.489 | ✅ Installiert (via pip) |
 | infracost | v0.10.42 | ✅ Installiert |
 | ansible | v2.19.3 | ✅ Installiert |
 | ansible-lint | v25.9.2 | ✅ Installiert |
@@ -896,7 +896,8 @@ ansible-playbook playbook.yml --vault-password-file ~/.vault_pass.txt
 - **pulumi**: In `~/.pulumi/bin` installiert. PATH erweitern: `export PATH="$HOME/.pulumi/bin:$PATH"`
 - **ansible-navigator**: In `~/.local/bin`. PATH erweitern: `export PATH="$HOME/.local/bin:$PATH"`
 - **terraform-docs**: ✅ Erfolgreich installiert (QA-Runde)
-- **tfsec, checkov**: ⚠️ Nicht installiert (Release-URLs 404). Workarounds: Via Docker (`docker run aquasec/tfsec`) oder pip (`pip install checkov`)
+- **tfsec**: ✅ Installiert v1.28.14 (QA-Runde - GitHub API Recherche erfolgreich)
+- **checkov**: ✅ Installiert via pip v3.2.489
 - **terrascan**: Nicht installiert (Release-URLs 404). Alternative: tfsec + checkov verwenden
 - **terraform-ls**: Nicht installiert. Empfehlung: VS Code Extension "Terraform" verwenden
 - **vagrant**: Installiert, benötigt VirtualBox Setup für WSL2

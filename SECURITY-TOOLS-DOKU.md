@@ -884,8 +884,8 @@ jobs:
 | Step-CLI | v0.27.1 | ✅ Installiert |
 
 **Hinweise:**
-- **SOPS**: Nicht installiert (Release-URLs 404). Workaround: Via Docker (`docker run mozilla/sops`)
-- **Kubeaudit**: Nicht installiert (Release-URLs 404). Workaround: Via Docker (`docker run aquasec/kubeaudit`)
+- **SOPS**: Nicht installiert (Release-URLs 404, GitHub API-Probleme). **Workaround:** Via Docker (`docker run mozilla/sops`) oder manuelle Installation von GitHub Releases-Seite. **Details siehe:** `QA-FINAL-REPORT.md`
+- **Kubeaudit**: Nicht installiert (Release-URLs 404, GitHub API-Probleme). **Workaround:** Via Docker (`docker run aquasec/kubeaudit`) oder `kubectl krew install kubeaudit`. **Details siehe:** `QA-FINAL-REPORT.md`
 - **Checkov**: Installiert via pip in `~/.local/bin`. PATH erweitern: `export PATH="$HOME/.local/bin:$PATH"`
 
 ---

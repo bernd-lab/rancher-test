@@ -756,11 +756,10 @@ kubens production
 | btop | v1.3.0 | ✅ Installiert |
 | htop | v3.3.0 | ✅ Installiert |
 | watch | latest | ✅ Installiert |
-| kail | - | ⚠️ Nicht installiert* |
+| kail | v0.17.4 | ✅ Installiert (QA-Runde) |
 | kubectl-tree | - | ⚠️ Nicht installiert* |
 
 **Hinweise:**
-- **kail**: Nicht installiert (Release-URLs 404). Alternative: `stern` verwenden
 - **kubectl-tree**: Benötigt `kubectl krew install tree`. Alternative: `kubectl get --all-namespaces` verwenden
 - Alle anderen Tools erfolgreich installiert und verfügbar
 

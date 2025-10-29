@@ -865,11 +865,14 @@ eval "$(direnv hook bash)"
 | mtr | v0.95 | ✅ Installiert |
 | rsync | v3.2.7 | ✅ Installiert |
 | neovim | v0.9.5 | ✅ Installiert |
+| eza | v0.23.4 | ✅ Installiert (QA-Runde) |
+| sd | v1.0.0 | ✅ Installiert (QA-Runde) |
+| choose | v1.3.7 | ✅ Installiert (QA-Runde) |
+| dust | v1.2.3 | ✅ Installiert (QA-Runde) |
 
 **Optional/Nicht installiert:**
-- **eza**: Nicht installiert (Release-URLs 404). Alternative: `ls --color` oder bat für Datei-Listing
-- **sd, choose**: Nicht installiert (Release-URLs 404). Alternative: `sed` und `awk` verwenden
-- **dog, broot**: Nicht installiert (Release-URLs 404). Alternative: `dig` und normale Navigation
+- **dog**: Nicht installierbar (benötigt libssl.so.1.1, Ubuntu 24.04 hat libssl.so.3). Alternative: `dig` verwenden
+- **broot**: Nicht installiert (Release-URL-Struktur problematisch). Alternative: `tree`, `ncdu` oder normale Navigation
 
 ---
 

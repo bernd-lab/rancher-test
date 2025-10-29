@@ -409,11 +409,8 @@ duf
 | dasel | v2.6.0 | ✅ Installiert |
 | delta | v0.17.0 | ✅ Installiert |
 | duf | v0.8.1 | ✅ Installiert |
-| procs | - | ⚠️ Nicht installiert* |
-| dust | - | ⚠️ Nicht installiert* |
-
-**Hinweise:**
-- **procs, dust**: Nicht installiert (Release-URLs 404). Alternativen: `ps` und `du` verwenden
+| procs | v0.14.10 | ✅ Installiert (QA-Runde) |
+| dust | v1.2.3 | ✅ Installiert (QA-Runde) |
 
 ---
 
