@@ -1,0 +1,28 @@
+# WSL2 specific
+.vscode-server/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*~
+
+# Sensitive files
+.env
+.envrc
+*.key
+*.pem
+secrets/
+*.secret
+
+# Large files
+*.tar.gz
+*.zip
+*.deb
+*.rpm
+
