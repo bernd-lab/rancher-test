@@ -1,0 +1,40 @@
+[
+  {
+    "Type": "bind",
+    "Source": "/home/bernd/ssl",
+    "Destination": "/etc/gitlab/ssl",
+    "Mode": "rw",
+    "RW": true,
+    "Propagation": "rprivate"
+  },
+  {
+    "Type": "volume",
+    "Name": "bernd_gitlab_config",
+    "Source": "/var/lib/docker/volumes/bernd_gitlab_config/_data",
+    "Destination": "/etc/gitlab",
+    "Driver": "local",
+    "Mode": "z",
+    "RW": true,
+    "Propagation": ""
+  },
+  {
+    "Type": "volume",
+    "Name": "bernd_gitlab_logs",
+    "Source": "/var/lib/docker/volumes/bernd_gitlab_logs/_data",
+    "Destination": "/var/log/gitlab",
+    "Driver": "local",
+    "Mode": "z",
+    "RW": true,
+    "Propagation": ""
+  },
+  {
+    "Type": "volume",
+    "Name": "bernd_gitlab_data",
+    "Source": "/var/lib/docker/volumes/bernd_gitlab_data/_data",
+    "Destination": "/var/opt/gitlab",
+    "Driver": "local",
+    "Mode": "z",
+    "RW": true,
+    "Propagation": ""
+  }
+]

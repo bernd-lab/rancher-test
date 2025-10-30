@@ -220,3 +220,20 @@ Alle Dokumentationen wurden erstellt und enthalten:
 
 *Letzte Aktualisierung: $(date)*
 
+---
+
+## Backup-Policy-Check (aktuell)
+
+- GitLab: OK, regelmäßige Volldumps aktuell und nachvollziehbar vorhanden.
+- Docker, Jenkins, Jellyfin: Keine aktuellen, produktiven Backups gefunden! Pfade leer, keine automatisierte Sicherung nachweisbar.
+- **Blocker/ToDo:** Automatisierung und Kontrolle für diese Systeme mit aufnehmen (CI/Crons/Health).
+
+Siehe Muster/Script-Vorlagen in agents/backup-policy-templates.md.
+
+---
+## MVP-Status & Lessons Learned 30.10.2025
+- Infrastruktur/K8s, Monitoring, Storage, Policy, Doku und Automatisierung als Code erledigt
+- Sämtliche Clean-ups (Host + Cluster) durchgeführt
+- Alle Agentenrollen abgedeckt, Backup- und Security-Automatisierung umgesetzt
+- Lessons: Policy/Location Awareness ist Schlüssel für nachhaltigen Betrieb und Automatisierung!
+

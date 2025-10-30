@@ -1,0 +1,20 @@
+VM_IP:192.168.178.83
+Starting Nmap 7.93 ( https://nmap.org ) at 2025-10-30 08:04 CET
+Nmap scan report for keycloak.bernd.home (192.168.178.83)
+Host is up (0.00095s latency).
+
+PORT     STATE SERVICE
+22/tcp   open  ssh
+6443/tcp open  sun-sr-https
+
+Nmap done: 1 IP address (1 host up) scanned in 0.14 seconds
+Starting Nmap 7.93 ( https://nmap.org ) at 2025-10-30 08:04 CET
+Nmap scan report for keycloak.bernd.home (192.168.178.83)
+Host is up (0.00024s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 0.34 seconds

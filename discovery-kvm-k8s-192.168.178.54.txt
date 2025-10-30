@@ -1,0 +1,88 @@
+=== MACHINES ===
+MACHINE                 CLASS SERVICE      OS VERSION ADDRESSES
+qemu-12-k8s-single-node vm    libvirt-qemu -  -       -
+
+1 machines listed.
+
+=== MACHINE UNITS ===
+  UNIT                                              LOAD   ACTIVE SUB     DESCRIPTION
+  machine-qemu\x2d12\x2dk8s\x2dsingle\x2dnode.scope loaded active running Virtual Machine qemu-12-k8s-single-node
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+1 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use 'systemctl list-unit-files'.
+
+=== QEMU/KVM PROCS ===
+libvirt+ 2659409  154 53.6 24038656 17576320 ?   Sl   Okt09 46127:23 /usr/bin/qemu-system-x86_64 -name guest=k8s-single-node,debug-threads=on -S -object {"qom-type":"secret","id":"masterKey0","format":"raw","file":"/var/lib/libvirt/qemu/domain-12-k8s-single-node/master-key.aes"} -machine pc-i440fx-7.2,usb=off,dump-guest-core=off,memory-backend=pc.ram -accel kvm -cpu qemu64 -m 20480 -object {"qom-type":"memory-backend-ram","id":"pc.ram","size":21474836480} -overcommit mem-lock=off -smp 6,sockets=6,cores=1,threads=1 -uuid 2d724966-fbcc-40ca-87ce-68557ac8d3fa -no-user-config -nodefaults -chardev socket,id=charmonitor,fd=34,server=on,wait=off -mon chardev=charmonitor,id=monitor,mode=control -rtc base=utc -no-shutdown -boot strict=on -device {"driver":"piix3-usb-uhci","id":"usb","bus":"pci.0","addr":"0x1.0x2"} -device {"driver":"virtio-serial-pci","id":"virtio-serial0","bus":"pci.0","addr":"0x4"} -blockdev {"driver":"file","filename":"/home/bernd/.local/share/libvirt/images/ubuntu-24.04-k8s-base","node-name":"libvirt-3-storage","auto-read-only":true,"discard":"unmap"} -blockdev {"node-name":"libvirt-3-format","read-only":true,"driver":"qcow2","file":"libvirt-3-storage","backing":null} -blockdev {"driver":"file","filename":"/home/bernd/.local/share/libvirt/images/k8s-single-node-disk.qcow2","node-name":"libvirt-2-storage","auto-read-only":true,"discard":"unmap"} -blockdev {"node-name":"libvirt-2-format","read-only":false,"driver":"qcow2","file":"libvirt-2-storage","backing":"libvirt-3-format"} -device {"driver":"virtio-blk-pci","bus":"pci.0","addr":"0x5","drive":"libvirt-2-format","id":"virtio-disk0","bootindex":1} -blockdev {"driver":"file","filename":"/home/bernd/.local/share/libvirt/images/k8s-single-node-cloud-init.iso","node-name":"libvirt-1-storage","auto-read-only":true,"discard":"unmap"} -blockdev {"node-name":"libvirt-1-format","read-only":true,"driver":"raw","file":"libvirt-1-storage"} -device {"driver":"ide-cd","bus":"ide.1","unit":1,"drive":"libvirt-1-format","id":"ide0-1-1","serial":"cloudinit"} -netdev {"type":"tap","fd":"35","vhost":true,"vhostfd":"37","id":"hostnet0"} -device {"driver":"virtio-net-pci","netdev":"hostnet0","id":"net0","mac":"52:54:00:86:a1:53","bus":"pci.0","addr":"0x3"} -chardev pty,id=charserial0 -device {"driver":"isa-serial","chardev":"charserial0","id":"serial0","index":0} -chardev socket,id=charchannel0,fd=32,server=on,wait=off -device {"driver":"virtserialport","bus":"virtio-serial0.0","nr":1,"chardev":"charchannel0","id":"channel0","name":"org.qemu.guest_agent.0"} -audiodev {"id":"audio1","driver":"spice"} -spice port=5900,addr=127.0.0.1,disable-ticketing=on,seamless-migration=on -device {"driver":"cirrus-vga","id":"video0","bus":"pci.0","addr":"0x2"} -device {"driver":"virtio-balloon-pci","id":"balloon0","bus":"pci.0","addr":"0x6"} -object {"qom-type":"rng-random","id":"objrng0","filename":"/dev/urandom"} -device {"driver":"virtio-rng-pci","rng":"objrng0","id":"rng0","bus":"pci.0","addr":"0x7"} -sandbox on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny -msg timestamp=on
+root     2659445  0.0  0.0      0     0 ?        S    Okt09   0:49 [kvm-nx-lpage-recovery-2659409]
+root     2659457  0.0  0.0      0     0 ?        S    Okt09   0:00 [kvm-pit/2659409]
+
+=== LIBVIRT ===
+ Id   Name   Status
+---------------------
+
+ Name   Status   Automatischer Start   Bleibend
+-------------------------------------------------
+
+
+
+=== PORTS OF INTEREST ===
+LISTEN 0      4096        127.0.0.1:5900       0.0.0.0:*          
+LISTEN 0      128           0.0.0.0:22         0.0.0.0:*          
+LISTEN 0      128              [::]:22            [::]:*          
+
+=== K8S BINARIES ===
+kubectl missing
+k3s missing
+kubeadm missing
+
+=== ARP/NEIGH ===
+192.168.178.72 dev br0 lladdr 8a:e6:74:60:fe:00 STALE 
+192.168.178.204 dev br0 lladdr 50:e6:36:d8:d9:db STALE 
+192.168.178.47 dev br0 lladdr a0:d2:b1:aa:f7:06 REACHABLE 
+192.168.178.83 dev br0 lladdr 52:54:00:86:a1:53 REACHABLE 
+172.20.0.30 dev br-060a44c5acbc lladdr 32:c8:ed:94:8b:8a STALE 
+192.168.178.25 dev br0 lladdr 2c:f0:5d:0b:8d:8a REACHABLE 
+192.168.178.62 dev br0 FAILED 
+192.168.178.1 dev br0 lladdr 50:e6:36:d8:d9:db REACHABLE 
+192.168.178.75 dev br0 FAILED 
+192.168.178.49 dev br0 lladdr a6:02:93:0a:10:4a STALE 
+192.168.178.82 dev br0 lladdr 52:54:00:0e:00:18 STALE 
+172.18.0.2 dev br-65873c125133 lladdr 02:47:76:a3:6e:76 STALE 
+192.168.178.74 dev br0 lladdr 08:00:27:6f:8d:d5 STALE 
+172.20.0.4 dev br-060a44c5acbc lladdr 4e:81:53:10:2e:e0 STALE 
+192.168.178.48 dev br0 lladdr c2:a9:88:83:1c:9e STALE 
+192.168.178.85 dev br0 lladdr 00:15:5d:b2:19:04 STALE 
+172.20.0.20 dev br-060a44c5acbc lladdr 3a:b4:ac:83:37:aa STALE 
+172.18.0.5 dev br-65873c125133 FAILED 
+192.168.178.77 dev br0 FAILED 
+192.168.178.84 dev br0 lladdr 00:15:5d:b2:19:03 STALE 
+192.168.178.26 dev br0 lladdr 9c:d2:1e:05:dd:a2 STALE 
+172.17.0.2 dev docker0 lladdr 7e:b5:ae:72:0b:5a REACHABLE 
+172.20.0.10 dev br-060a44c5acbc lladdr c2:10:98:16:1b:58 STALE 
+172.30.0.2 dev br-ac5ba4e45122 lladdr de:b3:90:4a:b1:10 DELAY 
+172.18.0.4 dev br-65873c125133 lladdr 0a:fc:29:9e:b1:8a STALE 
+172.20.0.2 dev br-060a44c5acbc lladdr 36:c7:21:d1:75:ce STALE 
+192.168.178.76 dev br0 lladdr 52:54:00:f8:9c:c6 STALE 
+192.168.178.21 dev br0 lladdr 7c:61:66:27:ca:10 STALE 
+172.17.0.3 dev docker0 lladdr ba:39:ec:47:e0:50 REACHABLE 
+192.168.178.34 dev br0 lladdr ec:b5:fa:1f:8b:45 STALE 
+172.20.0.3 dev br-060a44c5acbc lladdr 72:42:35:0b:62:9a STALE 
+192.168.178.79 dev br0 lladdr 52:54:00:92:86:2e STALE 
+192.168.178.53 dev br0 lladdr 3e:95:bd:34:d6:86 STALE 
+192.168.178.20 dev br0 lladdr c8:db:26:0b:cf:90 DELAY 
+192.168.178.86 dev br0 lladdr 7c:e9:d3:3e:03:e5 STALE 
+192.168.178.202 dev br0 lladdr 50:e6:36:d8:d9:db STALE 
+192.168.178.81 dev br0 lladdr 52:54:00:ae:90:fe STALE 
+192.168.178.78 dev br0 lladdr 52:54:00:d5:f7:e5 STALE 
+192.168.178.73 dev br0 lladdr 08:00:27:0b:d1:19 STALE 
+192.168.178.80 dev br0 lladdr 52:54:00:4e:1c:3e STALE 
+2003:d4:7711:4400:554d:4969:885a:47e9 dev br0 lladdr 2c:f0:5d:0b:8d:8a STALE 
+fe80::94c6:5e88:11dc:9f57 dev br0 lladdr 2c:f0:5d:0b:8d:8a STALE 
+2003:d4:7729:2300:52e6:36ff:fed8:d9db dev br0 lladdr 50:e6:36:d8:d9:db router STALE 
+2003:d4:7711:4400:217e:960:5805:305a dev br0 lladdr 2c:f0:5d:0b:8d:8a STALE 
+fe80::9ed2:1eff:fe05:dda2 dev br0 lladdr 9c:d2:1e:05:dd:a2 STALE 
+fe80::52e6:36ff:fed8:d9db dev br0 lladdr 50:e6:36:d8:d9:db router STALE 
+=== DONE ===

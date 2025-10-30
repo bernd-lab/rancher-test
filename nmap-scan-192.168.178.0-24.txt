@@ -1,0 +1,37 @@
+=== CHECK NMAP ===
+/usr/bin/nmap
+Nmap version 7.93 ( https://nmap.org )
+Platform: x86_64-pc-linux-gnu
+Compiled with: liblua-5.3.6 openssl-3.0.17 libssh2-1.10.0 libz-1.2.13 libpcre-8.39 libpcap-1.10.3 nmap-libdnet-1.12 ipv6
+Compiled without:
+Available nsock engines: epoll poll select
+
+=== ARP TARGET MAC ===
+192.168.178.83 dev br0 lladdr 52:54:00:86:a1:53 REACHABLE 
+
+=== PING SWEEP (NMAP ARP) ===
+Host: 192.168.178.1 ()	Status: Up
+Host: 192.168.178.20 ()	Status: Up
+Host: 192.168.178.21 ()	Status: Up
+Host: 192.168.178.25 ()	Status: Up
+Host: 192.168.178.34 ()	Status: Up
+Host: 192.168.178.47 ()	Status: Up
+Host: 192.168.178.48 ()	Status: Up
+Host: 192.168.178.49 ()	Status: Up
+Host: 192.168.178.56 ()	Status: Up
+Host: 192.168.178.83 (keycloak.bernd.home)	Status: Up
+Host: 192.168.178.86 ()	Status: Up
+Host: 192.168.178.201 ()	Status: Up
+Host: 192.168.178.202 ()	Status: Up
+Host: 192.168.178.203 ()	Status: Up
+Host: 192.168.178.204 ()	Status: Up
+Host: 192.168.178.54 (gitlab.bernd.home)	Status: Up
+# Nmap done at Thu Oct 30 08:03:43 2025 -- 256 IP addresses (16 hosts up) scanned in 10.70 seconds
+
+=== CANDIDATE VM IPs (vendor QEMU/Red Hat) ===
+
+=== QUICK PORT CHECK (22,6443) ON ARP-MATCH ===
+Target IP:
+Starting Nmap 7.93 ( https://nmap.org ) at 2025-10-30 08:03 CET
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.04 seconds
+=== DONE ===

@@ -1,0 +1,430 @@
+=== SYSTEM ===
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 12 (bookworm)
+Release:	12
+Codename:	bookworm
+Linux zuhause 6.1.0-37-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.140-1 (2025-05-22) x86_64 GNU/Linux
+
+=== HARDWARE ===
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           39 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Core(TM) i5-7600K CPU @ 3.80GHz
+CPU family:                              6
+Model:                                   158
+Thread(s) per core:                      1
+Core(s) per socket:                      4
+Socket(s):                               1
+Stepping:                                9
+CPU(s) scaling MHz:                      19%
+CPU max MHz:                             4300,0000
+CPU min MHz:                             800,0000
+BogoMIPS:                                7599,80
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities
+Virtualization:                          VT-x
+L1d cache:                               128 KiB (4 instances)
+L1i cache:                               128 KiB (4 instances)
+L2 cache:                                1 MiB (4 instances)
+L3 cache:                                6 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-3
+Vulnerability Gather data sampling:      Mitigation; Microcode
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             KVM: Mitigation: Split huge pages
+Vulnerability L1tf:                      Mitigation; PTE Inversion; VMX conditional cache flushes, SMT disabled
+Vulnerability Mds:                       Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Meltdown:                  Mitigation; PTI
+Vulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Mitigation; IBRS
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; IBRS; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Mitigation; Microcode
+Vulnerability Tsx async abort:           Mitigation; TSX disabled
+              gesamt       benutzt     frei      gemns.  Puffer/Cache verfügbar
+Speicher:       31Gi        24Gi       414Mi       268Mi       6,7Gi       6,4Gi
+Swap:          4,0Gi       4,0Gi       2,5Mi
+NAME                      FSTYPE   SIZE TYPE MOUNTPOINT
+sda                                1,8T disk 
+└─sda1                             1,8T part 
+sdb                              256,2G disk 
+└─sdb1                           256,2G part 
+sdc                                7,3T disk 
+└─sdc1                    ntfs     7,3T part /media/devmon/WD-Black_8TB
+sdd                               16,4T disk 
+└─sdd1                    ntfs    16,4T part /media/devmon/Elements
+sr0                               1024M rom  
+nbd0                                60G disk 
+├─nbd0p1                             1M part 
+├─nbd0p2                             2G part 
+└─nbd0p3                            58G part 
+  └─ubuntu--vg-ubuntu--lv ext4      29G lvm  
+nbd1                                 0B disk 
+nbd2                                 0B disk 
+nbd3                                 0B disk 
+nbd4                                 0B disk 
+nbd5                                 0B disk 
+nbd6                                 0B disk 
+nbd7                                 0B disk 
+nbd8                                 0B disk 
+nbd9                                 0B disk 
+nbd10                                0B disk 
+nbd11                                0B disk 
+nbd12                                0B disk 
+nbd13                                0B disk 
+nbd14                                0B disk 
+nbd15                                0B disk 
+nvme0n1                          232,9G disk 
+├─nvme0n1p1               vfat     512M part /boot/efi
+├─nvme0n1p2               ext4   231,4G part /
+└─nvme0n1p3               swap     977M part 
+
+=== NETWORK ===
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp0s31f6        UP             
+br0              UP             192.168.178.54/24 2003:d4:7709:600:1467:8eff:fee5:4649/64 fddd:323:11f2:0:1467:8eff:fee5:4649/64 fe80::1467:8eff:fee5:4649/64 
+docker0          UP             172.17.0.1/16 fe80::f05e:17ff:fe97:abc2/64 
+br-060a44c5acbc  UP             172.20.0.1/24 fe80::980c:27ff:fe02:5ce0/64 
+vnet11           UNKNOWN        fe80::88a8:efff:fe24:81f2/64 
+br-ac5ba4e45122  UP             172.30.0.1/16 fe80::58f7:44ff:fe1f:6cc8/64 
+vethdca1d3b@if2  UP             fe80::28d4:19ff:fe71:4509/64 
+veth1629b0b@if2  UP             fe80::e475:afff:fe87:d95e/64 
+veth2ca7afb@if2  UP             fe80::6c7f:a9ff:fea8:11c2/64 
+br-65873c125133  UP             172.18.0.1/16 fe80::7cbb:91ff:fe38:cc41/64 
+veth91421b1@if2  UP             fe80::38cd:c0ff:fe32:727c/64 
+vethb6be5c8@if2  UP             fe80::f4f7:aff:feee:b711/64 
+vethe72f129@if2  UP             fe80::b41c:62ff:fe04:5e74/64 
+veth2697d3d@if2  UP             fe80::c487:21ff:fec2:1d54/64 
+veth7d24667@if2  UP             fe80::d0ed:c0ff:fe63:74cd/64 
+veth7d06d1f@if2  UP             fe80::8805:f7ff:fea2:5515/64 
+default via 192.168.178.1 dev br0 onlink 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 
+172.18.0.0/16 dev br-65873c125133 proto kernel scope link src 172.18.0.1 
+172.20.0.0/24 dev br-060a44c5acbc proto kernel scope link src 172.20.0.1 
+172.30.0.0/16 dev br-ac5ba4e45122 proto kernel scope link src 172.30.0.1 
+192.168.178.0/24 dev br0 proto kernel scope link src 192.168.178.54 
+Netid State  Recv-Q Send-Q   Local Address:Port  Peer Address:PortProcess                                                                                                    
+udp   UNCONN 0      0              0.0.0.0:53         0.0.0.0:*    ino:50401599 sk:107c cgroup:/system.slice/docker.service <->                                              
+udp   UNCONN 0      0              0.0.0.0:111        0.0.0.0:*    ino:24363811 sk:1001 cgroup:/system.slice/rpcbind.socket <->                                              
+udp   UNCONN 0      0       172.30.255.255:137        0.0.0.0:*    ino:47403053 sk:107d cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0           172.30.0.1:137        0.0.0.0:*    ino:47403052 sk:107e cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0       172.18.255.255:137        0.0.0.0:*    ino:33361246 sk:107f cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0           172.18.0.1:137        0.0.0.0:*    ino:33361245 sk:1080 cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0         172.20.0.255:137        0.0.0.0:*    ino:31064943 sk:200a cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0           172.20.0.1:137        0.0.0.0:*    ino:31064942 sk:200b cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0       172.17.255.255:137        0.0.0.0:*    ino:75299 sk:1002 cgroup:/system.slice/nmbd.service <->                                                   
+udp   UNCONN 0      0           172.17.0.1:137        0.0.0.0:*    ino:75298 sk:1003 cgroup:/system.slice/nmbd.service <->                                                   
+udp   UNCONN 0      0      192.168.178.255:137        0.0.0.0:*    ino:75259 sk:1014 cgroup:/system.slice/nmbd.service <->                                                   
+udp   UNCONN 0      0       192.168.178.54:137        0.0.0.0:*    ino:75258 sk:1015 cgroup:/system.slice/nmbd.service <->                                                   
+udp   UNCONN 0      0              0.0.0.0:137        0.0.0.0:*    ino:75210 sk:1016 cgroup:/system.slice/nmbd.service <->                                                   
+udp   UNCONN 0      0       172.30.255.255:138        0.0.0.0:*    ino:47403055 sk:1081 cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0           172.30.0.1:138        0.0.0.0:*    ino:47403054 sk:1082 cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0       172.18.255.255:138        0.0.0.0:*    ino:33361248 sk:1083 cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0           172.18.0.1:138        0.0.0.0:*    ino:33361247 sk:1084 cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0         172.20.0.255:138        0.0.0.0:*    ino:31064945 sk:200c cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0           172.20.0.1:138        0.0.0.0:*    ino:31064944 sk:200d cgroup:/system.slice/nmbd.service <->                                                
+udp   UNCONN 0      0       172.17.255.255:138        0.0.0.0:*    ino:75301 sk:1017 cgroup:/system.slice/nmbd.service <->                                                   
+udp   UNCONN 0      0           172.17.0.1:138        0.0.0.0:*    ino:75300 sk:1018 cgroup:/system.slice/nmbd.service <->                                                   
+udp   UNCONN 0      0      192.168.178.255:138        0.0.0.0:*    ino:75261 sk:1029 cgroup:/system.slice/nmbd.service <->                                                   
+udp   UNCONN 0      0       192.168.178.54:138        0.0.0.0:*    ino:75260 sk:102a cgroup:/system.slice/nmbd.service <->                                                   
+udp   UNCONN 0      0              0.0.0.0:138        0.0.0.0:*    ino:75211 sk:102b cgroup:/system.slice/nmbd.service <->                                                   
+udp   UNCONN 0      0            127.0.0.1:962        0.0.0.0:*    ino:24365399 sk:102d cgroup:/system.slice/rpc-statd.service <->                                           
+udp   UNCONN 0      0              0.0.0.0:51700      0.0.0.0:*    ino:40991252 sk:1085 cgroup:/system.slice/rsyslog.service <->                                             
+udp   UNCONN 0      0              0.0.0.0:5353       0.0.0.0:*    uid:104 ino:19636 sk:1034 cgroup:/system.slice/avahi-daemon.service <->                                   
+udp   UNCONN 0      0              0.0.0.0:7359       0.0.0.0:*    ino:42842816 sk:1086 cgroup:/system.slice/docker.service <->                                              
+udp   UNCONN 0      0              0.0.0.0:57019      0.0.0.0:*    ino:36881770 sk:1087 cgroup:/system.slice/nfs-mountd.service <->                                          
+udp   UNCONN 0      0              0.0.0.0:42387      0.0.0.0:*    uid:104 ino:19638 sk:103a cgroup:/system.slice/avahi-daemon.service <->                                   
+udp   UNCONN 0      0              0.0.0.0:42552      0.0.0.0:*    uid:120 ino:24366404 sk:103b cgroup:/system.slice/rpc-statd.service <->                                   
+udp   UNCONN 0      0              0.0.0.0:59423      0.0.0.0:*    ino:36883502 sk:1088 cgroup:unreachable:e146 <->                                                          
+udp   UNCONN 0      0              0.0.0.0:60231      0.0.0.0:*    ino:36881778 sk:1089 cgroup:/system.slice/nfs-mountd.service <->                                          
+udp   UNCONN 0      0              0.0.0.0:46422      0.0.0.0:*    ino:36881762 sk:108a cgroup:/system.slice/nfs-mountd.service <->                                          
+udp   UNCONN 0      0                 [::]:111           [::]:*    ino:24362977 sk:103f cgroup:/system.slice/rpcbind.socket v6only:1 <->                                     
+udp   UNCONN 0      0                 [::]:51655         [::]:*    ino:36881766 sk:108b cgroup:/system.slice/nfs-mountd.service v6only:1 <->                                 
+udp   UNCONN 0      0                 [::]:51899         [::]:*    ino:36883504 sk:108c cgroup:unreachable:e146 v6only:1 <->                                                 
+udp   UNCONN 0      0                 [::]:37325         [::]:*    uid:104 ino:19639 sk:1045 cgroup:/system.slice/avahi-daemon.service v6only:1 <->                          
+udp   UNCONN 0      0                 [::]:5353          [::]:*    uid:104 ino:19637 sk:1047 cgroup:/system.slice/avahi-daemon.service v6only:1 <->                          
+udp   UNCONN 0      0                 [::]:7359          [::]:*    ino:42842817 sk:108d cgroup:/system.slice/docker.service v6only:1 <->                                     
+udp   UNCONN 0      0                 [::]:57386         [::]:*    ino:36881774 sk:108e cgroup:/system.slice/nfs-mountd.service v6only:1 <->                                 
+udp   UNCONN 0      0                 [::]:57669         [::]:*    ino:36881782 sk:108f cgroup:/system.slice/nfs-mountd.service v6only:1 <->                                 
+udp   UNCONN 0      0                 [::]:43449         [::]:*    uid:120 ino:24366410 sk:104e cgroup:/system.slice/rpc-statd.service v6only:1 <->                          
+tcp   LISTEN 0      4096           0.0.0.0:60809      0.0.0.0:*    ino:36881772 sk:1090 cgroup:/system.slice/nfs-mountd.service <->                                          
+tcp   LISTEN 0      4096         127.0.0.1:5900       0.0.0.0:*    uid:64055 ino:32531129 sk:3001 cgroup:/machine.slice/machine-qemu\x2d12\x2dk8s\x2dsingle\x2dnode.scope <->
+tcp   LISTEN 0      4096           0.0.0.0:8443       0.0.0.0:*    ino:48766664 sk:1091 cgroup:/system.slice/docker.service <->                                              
+tcp   LISTEN 0      4096           0.0.0.0:41101      0.0.0.0:*    ino:36881780 sk:1092 cgroup:/system.slice/nfs-mountd.service <->                                          
+tcp   LISTEN 0      4096           0.0.0.0:9100       0.0.0.0:*    ino:33368789 sk:1093 cgroup:/system.slice/docker.service <->                                              
+tcp   LISTEN 0      4096           0.0.0.0:8929       0.0.0.0:*    ino:48765605 sk:1094 cgroup:/system.slice/docker.service <->                                              
+tcp   LISTEN 0      4096           0.0.0.0:8921       0.0.0.0:*    ino:42841948 sk:1095 cgroup:/system.slice/docker.service <->                                              
+tcp   LISTEN 0      4096    192.168.178.54:9177       0.0.0.0:*    ino:40318064 sk:1096 cgroup:/system.slice/docker.service <->                                              
+tcp   LISTEN 0      128          127.0.0.1:631        0.0.0.0:*    ino:64432437 sk:1097 cgroup:/system.slice/cups.service <->                                                
+tcp   LISTEN 0      20           127.0.0.1:25         0.0.0.0:*    ino:24304592 sk:1054 cgroup:/system.slice/exim4.service <->                                               
+tcp   LISTEN 0      64             0.0.0.0:36569      0.0.0.0:*    ino:36883503 sk:1098 cgroup:unreachable:e146 <->                                                          
+tcp   LISTEN 0      64             0.0.0.0:2049       0.0.0.0:*    ino:36882854 sk:1099 cgroup:unreachable:e146 <->                                                          
+tcp   LISTEN 0      4096           0.0.0.0:2222       0.0.0.0:*    ino:48767385 sk:109a cgroup:/system.slice/docker.service <->                                              
+tcp   LISTEN 0      50             0.0.0.0:445        0.0.0.0:*    ino:74235 sk:13 cgroup:/system.slice/smbd.service <->                                                     
+tcp   LISTEN 0      4096           0.0.0.0:443        0.0.0.0:*    ino:32944419 sk:46 cgroup:/system.slice/docker.service <->                                                
+tcp   LISTEN 0      4096           0.0.0.0:111        0.0.0.0:*    ino:24362975 sk:1058 cgroup:/system.slice/rpcbind.socket <->                                              
+tcp   LISTEN 0      4096           0.0.0.0:80         0.0.0.0:*    ino:32946342 sk:47 cgroup:/system.slice/docker.service <->                                                
+tcp   LISTEN 0      4096           0.0.0.0:53         0.0.0.0:*    ino:50402510 sk:109b cgroup:/system.slice/docker.service <->                                              
+tcp   LISTEN 0      128            0.0.0.0:22         0.0.0.0:*    ino:74330 sk:15 cgroup:/system.slice/ssh.service <->                                                      
+tcp   LISTEN 0      50             0.0.0.0:139        0.0.0.0:*    ino:74236 sk:16 cgroup:/system.slice/smbd.service <->                                                     
+tcp   LISTEN 0      4096    192.168.178.54:8081       0.0.0.0:*    ino:40312582 sk:109c cgroup:/system.slice/docker.service <->                                              
+tcp   LISTEN 0      4096    192.168.178.54:8080       0.0.0.0:*    ino:32863532 sk:49 cgroup:/system.slice/docker.service <->                                                
+tcp   LISTEN 0      4096           0.0.0.0:40255      0.0.0.0:*    ino:36881764 sk:109d cgroup:/system.slice/nfs-mountd.service <->                                          
+tcp   LISTEN 0      4096           0.0.0.0:8053       0.0.0.0:*    ino:50401640 sk:109e cgroup:/system.slice/docker.service <->                                              
+tcp   LISTEN 0      4096           0.0.0.0:8097       0.0.0.0:*    ino:42841932 sk:109f cgroup:/system.slice/docker.service <->                                              
+tcp   LISTEN 0      4096    192.168.178.54:50000      0.0.0.0:*    ino:32863560 sk:4b cgroup:/system.slice/docker.service <->                                                
+tcp   LISTEN 0      5            127.0.0.1:61209      0.0.0.0:*    ino:20165 sk:1f cgroup:/system.slice/glances.service <->                                                  
+tcp   LISTEN 0      4096           0.0.0.0:38527      0.0.0.0:*    uid:120 ino:24366407 sk:105c cgroup:/system.slice/rpc-statd.service <->                                   
+tcp   LISTEN 0      2                [::1]:3350          [::]:*    ino:19762 sk:25 cgroup:/system.slice/xrdp-sesman.service v6only:1 <->                                     
+tcp   LISTEN 0      4096                 *:9323             *:*    ino:31226661 sk:300f cgroup:/system.slice/docker.service v6only:0 <->                                     
+tcp   LISTEN 0      20               [::1]:25            [::]:*    ino:24304593 sk:105e cgroup:/system.slice/exim4.service v6only:1 <->                                      
+tcp   LISTEN 0      4096              [::]:42797         [::]:*    uid:120 ino:24366413 sk:105f cgroup:/system.slice/rpc-statd.service v6only:1 <->                          
+tcp   LISTEN 0      128              [::1]:631           [::]:*    ino:64432436 sk:10a0 cgroup:/system.slice/cups.service v6only:1 <->                                       
+tcp   LISTEN 0      4096              [::]:57689         [::]:*    ino:36881784 sk:10a1 cgroup:/system.slice/nfs-mountd.service v6only:1 <->                                 
+tcp   LISTEN 0      4096              [::]:8443          [::]:*    ino:48766665 sk:10a2 cgroup:/system.slice/docker.service v6only:1 <->                                     
+tcp   LISTEN 0      4096              [::]:9100          [::]:*    ino:33368790 sk:10a3 cgroup:/system.slice/docker.service v6only:1 <->                                     
+tcp   LISTEN 0      4096              [::]:8929          [::]:*    ino:48765606 sk:10a4 cgroup:/system.slice/docker.service v6only:1 <->                                     
+tcp   LISTEN 0      4096              [::]:8921          [::]:*    ino:42841949 sk:10a5 cgroup:/system.slice/docker.service v6only:1 <->                                     
+tcp   LISTEN 0      2                    *:3389             *:*    uid:117 ino:24060 sk:32 cgroup:/system.slice/xrdp.service v6only:0 <->                                    
+tcp   LISTEN 0      64                [::]:2049          [::]:*    ino:36883497 sk:10a6 cgroup:unreachable:e146 v6only:1 <->                                                 
+tcp   LISTEN 0      4096              [::]:2222          [::]:*    ino:48767386 sk:10a7 cgroup:/system.slice/docker.service v6only:1 <->                                     
+tcp   LISTEN 0      50                [::]:445           [::]:*    ino:74233 sk:35 cgroup:/system.slice/smbd.service v6only:1 <->                                            
+tcp   LISTEN 0      4096              [::]:443           [::]:*    ino:32944420 sk:4d cgroup:/system.slice/docker.service v6only:1 <->                                       
+tcp   LISTEN 0      4096              [::]:111           [::]:*    ino:24363813 sk:1065 cgroup:/system.slice/rpcbind.socket v6only:1 <->                                     
+tcp   LISTEN 0      4096              [::]:80            [::]:*    ino:32946343 sk:4e cgroup:/system.slice/docker.service v6only:1 <->                                       
+tcp   LISTEN 0      128               [::]:22            [::]:*    ino:74332 sk:38 cgroup:/system.slice/ssh.service v6only:1 <->                                             
+tcp   LISTEN 0      50                [::]:139           [::]:*    ino:74234 sk:39 cgroup:/system.slice/smbd.service v6only:1 <->                                            
+tcp   LISTEN 0      4096              [::]:56735         [::]:*    ino:36881776 sk:10a8 cgroup:/system.slice/nfs-mountd.service v6only:1 <->                                 
+tcp   LISTEN 0      4096              [::]:8097          [::]:*    ino:42841933 sk:10a9 cgroup:/system.slice/docker.service v6only:1 <->                                     
+tcp   LISTEN 0      64                [::]:39289         [::]:*    ino:36883505 sk:10aa cgroup:unreachable:e146 v6only:1 <->                                                 
+tcp   LISTEN 0      4096              [::]:38579         [::]:*    ino:36881768 sk:10ab cgroup:/system.slice/nfs-mountd.service v6only:1 <->                                 
+nameserver 8.8.8.8
+nameserver 1.1.1.1
+
+=== VIRTUALIZATION / KVM ===
+ Id   Name   Status
+---------------------
+
+ Name   Status   Automatischer Start   Bleibend
+-------------------------------------------------
+
+ Name      Status   Automatischer Start
+-----------------------------------------
+ default   Aktiv    ja
+
+
+=== DOCKER ===
+Client: Docker Engine - Community
+ Version:           28.5.1
+ API version:       1.51
+ Go version:        go1.24.8
+ Git commit:        e180ab8
+ Built:             Wed Oct  8 12:17:24 2025
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          28.5.1
+  API version:      1.51 (minimum version 1.24)
+  Go version:       go1.24.8
+  Git commit:       f8215cc
+  Built:            Wed Oct  8 12:17:24 2025
+  OS/Arch:          linux/amd64
+  Experimental:     true
+ containerd:
+  Version:          v1.7.28
+  GitCommit:        b98a3aace656320842a23f4a392a33f46af97866
+ nvidia:
+  Version:          1.3.0
+  GitCommit:        v1.3.0-0-g4ca628d1
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+Client: Docker Engine - Community
+ Version:    28.5.1
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.29.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.40.0
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 19
+  Running: 9
+  Paused: 0
+  Stopped: 10
+ Images: 31
+ Server Version: 28.5.1
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: local
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 1
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 nvidia runc
+ Default Runtime: nvidia
+ Init Binary: docker-init
+ containerd version: b98a3aace656320842a23f4a392a33f46af97866
+ runc version: v1.3.0-0-g4ca628d1
+ init version: de40ad0
+ Security Options:
+  apparmor
+  seccomp
+   Profile: builtin
+  no-new-privileges
+ Kernel Version: 6.1.0-37-amd64
+ Operating System: Debian GNU/Linux 12 (bookworm)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 4
+ Total Memory: 31.21GiB
+ Name: zuhause
+ ID: ce277895-f832-4901-a9e8-92e4c8f51417
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Experimental: true
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: true
+
+CONTAINER ID   IMAGE                                            NAMES                     STATUS
+31d40903f931   feb8c881adba                                     pihole                    Up 12 days (healthy)
+c2c1226a4829   gitlab/gitlab-ce:latest                          gitlab                    Up 13 days (healthy)
+841292bc6ea9   alekseizakharov/libvirt-exporter:latest          libvirt-exporter          Up 2 weeks
+ff4fb9e3ec3c   gcr.io/cadvisor/cadvisor:latest                  cadvisor                  Up 2 weeks (healthy)
+7f30fcb5e9e3   grafana/grafana:10.1.0                           grafana                   Exited (0) 2 weeks ago
+a3c49be02861   prom/prometheus:v2.47.2                          prometheus                Exited (0) 2 weeks ago
+480fe171740c   prom/node-exporter:latest                        node-exporter             Up 2 weeks
+d903f0a31386   grafana/promtail:2.8.2                           promtail                  Up 2 weeks
+88ba6c7f79c1   nginx:alpine                                     nginx-reverse-proxy       Up 2 weeks
+04bfb24b95bf   jenkins/jenkins:lts                              jenkins                   Up 2 weeks
+66f755fc25cf   ghcr.io/jim60105/whisperx:large-v3-de            whisperx-container        Exited (137) 3 weeks ago
+eab0c9b3ba4d   jellyfin/jellyfin:latest                         jellyfin                  Up 2 weeks (healthy)
+319f9201646f   ghcr.io/home-assistant/home-assistant:2025.5.3   big-bear-home-assistant   Exited (0) 3 weeks ago
+f3952490db6d   linuxserver/syncthing:1.29.2                     syncthing                 Exited (0) 3 weeks ago
+cee65a73e581   bigbeartechworld/big-bear-btop:0.1.2             big-bear-btop             Exited (0) 3 weeks ago
+6b85b3a44816   amir20/dozzle:v8.12.19                           big-bear-dozzle           Exited (0) 3 weeks ago
+c74749d6da65   ghcr.io/gotson/komga:1.21.3                      big-bear-komga            Exited (143) 3 weeks ago
+d1a045bbfce3   linuxserver/grocy:4.5.0                          linuxserver-grocy-app-1   Exited (0) 3 weeks ago
+7829e23fe304   jlesage/video-duplicate-finder:latest            video-duplicate-finder    Exited (0) 3 weeks ago
+REPOSITORY                              TAG             IMAGE ID       CREATED         SIZE
+gitlab-backup-corrupted                 latest          9a0a33b86f0e   13 days ago     3.8GB
+alpine                                  latest          706db57fb206   3 weeks ago     8.32MB
+gitlab/gitlab-ce                        latest          2d8fd9edc73b   3 weeks ago     3.8GB
+nginx                                   alpine          5e7abcdd2021   3 weeks ago     52.8MB
+jenkins/jenkins                         lts             79d081a365a1   6 weeks ago     472MB
+pihole/pihole                           latest          8befa64b9db9   2 months ago    93.9MB
+ghcr.io/jim60105/whisperx               large-v3-de     4240ad0524a6   3 months ago    14.1GB
+prom/prometheus                         latest          b5239da13ab0   4 months ago    270MB
+grafana/grafana                         latest          4f2ba943b1de   4 months ago    681MB
+amir20/dozzle                           v8.12.19        95943a2f0f3b   5 months ago    57MB
+redis                                   8               860da63e75fb   5 months ago    128MB
+ghcr.io/paperless-ngx/paperless-ngx     2.16.2          265af4d6bce4   5 months ago    1.37GB
+ghcr.io/home-assistant/home-assistant   2025.5.3        f3489da6143b   5 months ago    1.95GB
+bigbeartechworld/big-bear-btop          0.1.2           7419236bf585   5 months ago    508MB
+postgres                                16              616e340baeac   5 months ago    436MB
+gotenberg/gotenberg                     8.21            9ec029e30156   5 months ago    1.53GB
+ghcr.io/gotson/komga                    1.21.3          2343f100c846   5 months ago    598MB
+rebelcore/jellyfin-exporter             latest          4cde7d579fcd   5 months ago    26.8MB
+linuxserver/grocy                       4.5.0           18cc3bb6d72f   6 months ago    216MB
+jellyfin/jellyfin                       latest          bb8553ab0efe   6 months ago    1.25GB
+pihole/pihole                           2025.04.0       feb8c881adba   6 months ago    90.1MB
+prom/node-exporter                      latest          255ec253085f   7 months ago    25MB
+linuxserver/syncthing                   1.29.2          9d69cd9219ed   8 months ago    52.2MB
+jlesage/video-duplicate-finder          latest          b1c3ae4f22b9   8 months ago    324MB
+ghcr.io/paperless-ngx/tika              2.9.1-minimal   a29ad15d776d   18 months ago   360MB
+gcr.io/cadvisor/cadvisor                latest          c02cf39d3dba   20 months ago   80.8MB
+prom/prometheus                         v2.47.2         22010d1e5539   2 years ago     245MB
+grafana/grafana                         10.1.0          6fc2a772178b   2 years ago     392MB
+grafana/promtail                        2.8.2           eb097c742fcd   2 years ago     195MB
+grafana/loki                            2.8.2           2162690d5e71   2 years ago     65.7MB
+alekseizakharov/libvirt-exporter        latest          0da05c712ff0   3 years ago     78.2MB
+NETWORK ID     NAME                    DRIVER    SCOPE
+ac5ba4e45122   bernd_gitlab_network    bridge    local
+30823c4cb6c9   bridge                  bridge    local
+11ae2fbba461   host                    host      local
+060a44c5acbc   mgmt_network            bridge    local
+65873c125133   monitoring_monitoring   bridge    local
+fa112ddc2835   none                    null      local
+DRIVER    VOLUME NAME
+local     0cbb4d0ef1f282ded0a6c731ad64cad78588b7f8c9e051430f2241b934e1b2f5
+local     2c89279596e2fff6c61f7c1fb1901360644169cc15bf199302ff6a59de16d762
+local     77fd68b2d59b126f676594f9869192e0fa72a4e6ec2b4c8a8201c5d683f92908
+local     bernd_gitlab_config
+local     bernd_gitlab_data
+local     bernd_gitlab_logs
+local     docker-configs_prometheus_data
+local     elastic_es_data
+local     gitlab_backup_volumes
+local     jenkins_home_new
+local     monitoring_grafana_data
+local     monitoring_prometheus_data
+local     pihole-dnsmasq
+local     pihole-etc
+local     pihole_dnsmasq
+local     pihole_etc
+Docker Compose version v2.40.0
+
+=== KUBERNETES ===
+
+=== HELM ===
+
+=== GIT / GITHUB CLI ===
+git version 2.39.5
+
+=== SEARCH REPOS (limited) ===
+/home/bernd/ffmpeg_sources/ffmpeg
+/home/bernd/k8s-cluster-test
+/home/bernd/nv-codec-headers
+/home/bernd/nv-codec-headers/ffmpeg
+/home/bernd/.oh-my-zsh
+
+=== TERRAFORM / ANSIBLE ===
+/home/bernd/k8s-cluster-test/bootstrap/outputs.tf
+/home/bernd/k8s-cluster-test/bootstrap/main.tf
+/home/bernd/k8s-cluster-test/bootstrap/variables.tf
+/home/bernd/k8s-cluster-test/docker-services/versions.tf
+/home/bernd/k8s-cluster-test/docker-services/outputs.tf
+/home/bernd/k8s-cluster-test/docker-services/main.tf
+/home/bernd/k8s-cluster-test/docker-services/variables.tf
+/home/bernd/k8s-cluster-test/infrastructure/versions.tf
+/home/bernd/k8s-cluster-test/infrastructure/outputs.tf
+/home/bernd/k8s-cluster-test/infrastructure/main.tf
+/home/bernd/k8s-cluster-test/infrastructure/variables.tf
+/home/bernd/k8s-cluster-test/infrastructure/fallback-strategies.tf
+/home/bernd/k8s-cluster-test/infrastructure/kubernetes.tf
+/home/bernd/k8s-cluster-test/ansible/ansible.cfg
+
+=== YAML/JSON TOOLS ===
+jq-1.6
+
+=== SECRETS TOOLS ===
+
+=== K8S SECRETS (counts) ===
+0
+
+=== OBS TOOLS ===
+=== DONE ===
